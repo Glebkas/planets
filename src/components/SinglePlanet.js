@@ -82,31 +82,6 @@ function SinglePlanet({ planet, open }) {
               Geology
             </label>
           </div>
-
-          {/* <input
-            name="detail"
-            value="structure"
-            id="1"
-            onChange={handleChange}
-            checked={detail === "structure"}
-            className={`button-area__button ${
-              isActive ? "button-area__button_active" : " "
-            }`}
-          >
-            <span className="button-area__button-num">02</span> Internal
-            Structure
-          </input>
-          <input
-            value="geology"
-            id="2"
-            checked={detail === "geology"}
-            onChange={handleChange}
-            className={`button-area__button ${
-              isActive ? "button-area__button_active" : ""
-            }`}
-          >
-            <span className="button-area__button-num">03</span> Surface Geology
-          </input> */}
         </div>
       </div>
       <div className="facts-grid">
