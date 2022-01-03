@@ -1,0 +1,28 @@
+.button-area__button-label {
+  display: flex;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  height: 48px;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: transparent;
+  font-family: spartan;
+  font-size: 12px;
+  line-height: 25px;
+  letter-spacing: 2.57143px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.button-area__button-label:hover {
+  cursor: pointer;
+  background-color: rgba(216, 216, 216, 0.2);
+  border: none;
+}
+
+.button-area__button-label:checked {
+  background-color: violet;
+}

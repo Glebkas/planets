@@ -1,0 +1,14 @@
+.header__nav-item {
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  overflow: visible;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 800;
+  background: transparent;
+}
+.header__nav-item:hover{
+  cursor: pointer;
+}

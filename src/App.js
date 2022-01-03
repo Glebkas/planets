@@ -1,24 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+
+import Header from "./components/Header";
+import SinglePlanet from "./components/SinglePlanet";
+import data from "./utils/data";
 
 function App() {
+  const mercury = data[0];
+  const [planet, setPlanet] = React.useState(mercury);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="App">
+        <div className="root">
+          <Header setPlanet={setPlanet} />
+          <SinglePlanet planet={planet} />
+        </div>
+      </div>
+    </>
   );
 }
 

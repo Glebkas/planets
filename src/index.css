@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
+@import url(../src/vendor/normalize.css);
+@import url(../src/fonts/fonts.css);
+@import url(../src/blocks/root/root.css);
+@import url(../src/blocks/header/header.css);
+@import url(../src/blocks/header/__title/header__title.css);
+@import url(../src/blocks/header/__nav/header__nav.css);
+@import url(../src/blocks/header/__nav-item/header__nav-item.css);
+@import url(../src/blocks/single-planet/single-planet.css);
+@import url(../src/blocks/planet-info/planet-info.css);
+@import url(../src/blocks/planet-ilustration/planet-ilustration.css);
+@import url(../src/blocks/planet-info/__title/planet-info__title.css);
+@import url(../src/blocks/planet-info/__description/plant-info__description.css);
+@import url(../src/blocks/planet-ilustration/__img/planet-ilustration__img.css);
+@import url(../src/blocks/button-area/button-area.css);
+@import url(../src/blocks/button-area/__button/button-area__button.css);
+@import url(../src/blocks/button-area/__button-input/button-area__button-input.css);
+@import url(../src/blocks/button-area/__button-label/button-area__button-label.css);
+@import url(../src/blocks/button-area/__button/_active/button-area__button_active.css);
+@import url(../src/blocks/button-area/__button-label-num/button-area__button-label-num.css);

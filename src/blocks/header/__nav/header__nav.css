@@ -1,0 +1,15 @@
+.header__nav {
+  display: flex;
+  color: white;
+  gap: 33px;
+  opacity: 0.75;
+  font-size: 11px;
+  line-height: 25px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  list-style: none;
+  padding: 0 40px 0 0;
+  margin: 0;
+  align-items: center;
+}

@@ -1,0 +1,4 @@
+.button-area__button_active {
+  background-color: rgba(65, 158, 187, 1);
+  border: none;
+}

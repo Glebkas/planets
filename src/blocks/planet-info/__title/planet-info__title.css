@@ -1,0 +1,9 @@
+.planet-info__title {
+  color: white;
+  font-family: "antonio";
+  font-size: 80px;
+  line-height: 104px;
+  text-transform: uppercase;
+  margin: 0;
+  font-weight: 400;
+}
