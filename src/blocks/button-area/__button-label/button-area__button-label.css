@@ -15,10 +15,11 @@
   letter-spacing: 2.57143px;
   align-items: center;
   margin-bottom: 16px;
+  transition: background-color 0.6s ease;
 }
 
 .button-area__button-label:hover {
   cursor: pointer;
   background-color: rgba(216, 216, 216, 0.2);
-  border: none;
+  transition: background-color 0.6s ease;
 }
