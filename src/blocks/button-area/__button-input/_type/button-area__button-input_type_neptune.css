@@ -1,0 +1,3 @@
+.button-area__button-input_type_neptune:checked + .button-area__button-label {
+  background-color: rgba(45, 104, 240, 1);
+}

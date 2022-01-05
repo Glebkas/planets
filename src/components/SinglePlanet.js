@@ -3,11 +3,15 @@ import React from "react";
 
 function SinglePlanet({ planet, open }) {
   const [info, setInfo] = React.useState("overview");
+  // const [color,setColor] = React.useState(planet.name);
 
   const handleChange = (e) => {
     console.log(e.target.id);
+    // setColor(planet.name)
     setInfo(e.target.value);
   };
+
+  const planetName = planet.name.toLowerCase();
 
   return (
     <section className="single-planet">
@@ -37,7 +41,7 @@ function SinglePlanet({ planet, open }) {
         <div className="button-area">
           <div className="button-area__button">
             <input
-              className="button-area__button-input"
+              className={`button-area__button-input button-area__button-input_type_${planetName}`}
               type="radio"
               id="overview"
               name="info"
@@ -52,7 +56,7 @@ function SinglePlanet({ planet, open }) {
           </div>
           <div className="button-area__button">
             <input
-              className="button-area__button-input"
+              className={`button-area__button-input button-area__button-input_type_${planetName}`}
               type="radio"
               id="structure"
               name="info"
@@ -68,7 +72,7 @@ function SinglePlanet({ planet, open }) {
           </div>
           <div className="button-area__button">
             <input
-              className="button-area__button-input"
+              className={`button-area__button-input button-area__button-input_type_${planetName}`}
               type="radio"
               id="geology"
               name="info"
@@ -84,12 +88,12 @@ function SinglePlanet({ planet, open }) {
           </div>
         </div>
       </div>
-      <div className="facts-grid">
-        <div></div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
+      <ul className="facts-grid">
+        <li>bla</li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </section>
   );
 }

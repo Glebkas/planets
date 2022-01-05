@@ -1,0 +1,3 @@
+.button-area__button-input_type_venus:checked + .button-area__button-label {
+  background-color: rgba(237, 162, 73, 1);
+}

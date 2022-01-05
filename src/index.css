@@ -14,6 +14,15 @@
 @import url(../src/blocks/button-area/button-area.css);
 @import url(../src/blocks/button-area/__button/button-area__button.css);
 @import url(../src/blocks/button-area/__button-input/button-area__button-input.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_mercury.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_venus.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_earth.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_mars.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_jupiter.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_saturn.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_uranus.css);
+@import url(../src/blocks/button-area/__button-input/_type/button-area__button-input_type_neptune.css);
 @import url(../src/blocks/button-area/__button-label/button-area__button-label.css);
 @import url(../src/blocks/button-area/__button/_active/button-area__button_active.css);
 @import url(../src/blocks/button-area/__button-label-num/button-area__button-label-num.css);
+@import url(../src/blocks/facts-grid/facts-grid.css);

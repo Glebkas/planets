@@ -1,0 +1,3 @@
+.button-area__button-input_type_jupiter:checked + .button-area__button-label {
+  background-color: rgba(216, 58, 52, 1);
+}
