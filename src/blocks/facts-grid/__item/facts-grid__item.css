@@ -1,0 +1,5 @@
+.facts-grid__item {
+  padding: 0;
+  direction: unset;
+  border: 1px solid #ffffff;
+}

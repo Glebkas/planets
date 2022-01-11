@@ -15,85 +15,105 @@ function SinglePlanet({ planet, open }) {
 
   return (
     <section className="single-planet">
-      <div className="planet-ilustration">
-        <div className="planet-ilustration__img" />
-        <div
-          // className="planet-ilustration__img planet-ilustration__img_type_iner"
-          src=""
-          alt=""
-        />
-        <div
-          // className="planet-ilustration__img planet-ilustration__img_type_surface"
-          src=""
-          alt=""
-        />
-      </div>
-      <div className="planet-info">
-        <h2 className="planet-info__title">{planet.name}</h2>
-        <p className="plant-info__description">{planet[info].content}</p>
-        <p className="planet-info__source">
-          Source :
-          <a href={planet.overview.source} className="planet-info__source-link">
-            Wikipedia
-          </a>
-          <span className="planet-info__sourse-icon"></span>
-        </p>
-        <div className="button-area">
-          <div className="button-area__button">
-            <input
-              className={`button-area__button-input button-area__button-input_type_${planetName}`}
-              type="radio"
-              id="overview"
-              name="info"
-              value="overview"
-              onChange={handleChange}
-              checked={info === "overview"}
-            />
-            <label className="button-area__button-label" htmlFor="overview">
-              {" "}
-              <span className="button-area__button-label-num">01</span> Overview
-            </label>
-          </div>
-          <div className="button-area__button">
-            <input
-              className={`button-area__button-input button-area__button-input_type_${planetName}`}
-              type="radio"
-              id="structure"
-              name="info"
-              value="structure"
-              onChange={handleChange}
-              checked={info === "structure"}
-            />
-            <label className="button-area__button-label" htmlFor="structure">
-              {" "}
-              <span className="button-area__button-label-num">02</span> Internal
-              Structure
-            </label>
-          </div>
-          <div className="button-area__button">
-            <input
-              className={`button-area__button-input button-area__button-input_type_${planetName}`}
-              type="radio"
-              id="geology"
-              name="info"
-              value="geology"
-              onChange={handleChange}
-              checked={info === "geology"}
-            />
-            <label className="button-area__button-label" htmlFor="geology">
-              {" "}
-              <span className="button-area__button-label-num">03</span> Surface
-              Geology
-            </label>
+      <div className="single-planet__top">
+        <div className="planet-ilustration">
+          <div className="planet-ilustration__img" />
+          <div
+            // className="planet-ilustration__img planet-ilustration__img_type_iner"
+            src=""
+            alt=""
+          />
+          <div
+            // className="planet-ilustration__img planet-ilustration__img_type_surface"
+            src=""
+            alt=""
+          />
+        </div>
+        <div className="planet-info">
+          <h2 className="planet-info__title">{planet.name}</h2>
+          <p className="plant-info__description">{planet[info].content}</p>
+          <p className="planet-info__source">
+            Source :
+            <a
+              href={planet.overview.source}
+              className="planet-info__source-link"
+            >
+              Wikipedia
+            </a>
+            <span className="planet-info__sourse-icon"></span>
+          </p>
+          <div className="button-area">
+            <div className="button-area__button">
+              <input
+                className={`button-area__button-input button-area__button-input_type_${planetName}`}
+                type="radio"
+                id="overview"
+                name="info"
+                value="overview"
+                onChange={handleChange}
+                checked={info === "overview"}
+              />
+              <label className="button-area__button-label" htmlFor="overview">
+                {" "}
+                <span className="button-area__button-label-num">01</span>{" "}
+                Overview
+              </label>
+            </div>
+            <div className="button-area__button">
+              <input
+                className={`button-area__button-input button-area__button-input_type_${planetName}`}
+                type="radio"
+                id="structure"
+                name="info"
+                value="structure"
+                onChange={handleChange}
+                checked={info === "structure"}
+              />
+              <label className="button-area__button-label" htmlFor="structure">
+                {" "}
+                <span className="button-area__button-label-num">02</span>{" "}
+                Internal Structure
+              </label>
+            </div>
+            <div className="button-area__button">
+              <input
+                className={`button-area__button-input button-area__button-input_type_${planetName}`}
+                type="radio"
+                id="geology"
+                name="info"
+                value="geology"
+                onChange={handleChange}
+                checked={info === "geology"}
+              />
+              <label className="button-area__button-label" htmlFor="geology">
+                {" "}
+                <span className="button-area__button-label-num">03</span>{" "}
+                Surface Geology
+              </label>
+            </div>
           </div>
         </div>
       </div>
-      <ul className="facts-grid">
-        <li>bla</li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul>
+      <div className="single-planet__bottom">
+        <ul className="facts-grid">
+          <li className="facts-grid__item">
+            <p></p>
+            <p>{planet.rotation}</p>
+          </li>
+          <li className="facts-grid__item">
+            <p></p>
+            <p>{planet.revolution}</p>
+          </li>
+          <li className="facts-grid__item">
+            <p></p>
+            <p>{planet.radius}</p>
+          </li>
+          <li className="facts-grid__item">
+            <p></p>
+            <p>{planet.temperature}</p>
+          </li>
+        </ul>
+      </div>
     </section>
   );
 }

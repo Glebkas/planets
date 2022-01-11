@@ -6,6 +6,7 @@
 @import url(../src/blocks/header/__nav/header__nav.css);
 @import url(../src/blocks/header/__nav-item/header__nav-item.css);
 @import url(../src/blocks/single-planet/single-planet.css);
+@import url(../src/blocks/single-planet/__top/single-planet__top.css);
 @import url(../src/blocks/planet-info/planet-info.css);
 @import url(../src/blocks/planet-ilustration/planet-ilustration.css);
 @import url(../src/blocks/planet-info/__title/planet-info__title.css);
@@ -25,4 +26,6 @@
 @import url(../src/blocks/button-area/__button-label/button-area__button-label.css);
 @import url(../src/blocks/button-area/__button/_active/button-area__button_active.css);
 @import url(../src/blocks/button-area/__button-label-num/button-area__button-label-num.css);
+@import url(../src/blocks/single-planet/__bottom/single-planet__bottom.css);
 @import url(../src/blocks/facts-grid/facts-grid.css);
+@import url(../src/blocks/facts-grid/__item/facts-grid__item.css);
