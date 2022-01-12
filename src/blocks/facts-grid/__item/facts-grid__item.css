@@ -1,5 +1,7 @@
 .facts-grid__item {
-  padding: 0;
-  direction: unset;
   border: 1px solid #ffffff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 16px 0 19px 15px;
 }

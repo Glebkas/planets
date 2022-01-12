@@ -29,3 +29,5 @@
 @import url(../src/blocks/single-planet/__bottom/single-planet__bottom.css);
 @import url(../src/blocks/facts-grid/facts-grid.css);
 @import url(../src/blocks/facts-grid/__item/facts-grid__item.css);
+@import url(../src/blocks/facts-grid/__item-title/facts-grid__item-title.css);
+@import url(../src/blocks/facts-grid/__item-fact/facts-grid__item-fact.css);

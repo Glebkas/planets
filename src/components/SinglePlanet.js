@@ -97,20 +97,20 @@ function SinglePlanet({ planet, open }) {
       <div className="single-planet__bottom">
         <ul className="facts-grid">
           <li className="facts-grid__item">
-            <p></p>
-            <p>{planet.rotation}</p>
+            <p className="facts-grid__item-title">ROTATION TIME</p>
+            <p className="facts-grid__item-fact">{planet.rotation}</p>
           </li>
           <li className="facts-grid__item">
-            <p></p>
-            <p>{planet.revolution}</p>
+            <p className="facts-grid__item-title">REVOLUTION TIME</p>
+            <p className="facts-grid__item-fact">{planet.revolution}</p>
           </li>
           <li className="facts-grid__item">
-            <p></p>
-            <p>{planet.radius}</p>
+            <p className="facts-grid__item-title">RADIUS</p>
+            <p className="facts-grid__item-fact">{planet.radius}</p>
           </li>
           <li className="facts-grid__item">
-            <p></p>
-            <p>{planet.temperature}</p>
+            <p className="facts-grid__item-title">AVERAGE TEMP.</p>
+            <p className="facts-grid__item-fact">{planet.temperature}</p>
           </li>
         </ul>
       </div>
