@@ -6,3 +6,11 @@
   font-weight: 500;
   opacity: 0.5;
 }
+
+@media screen and (max-width: 866px) {
+  .header__title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 39px;
+  }
+}

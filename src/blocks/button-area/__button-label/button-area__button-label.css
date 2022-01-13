@@ -24,3 +24,8 @@
   transition: background-color 0.6s ease;
 }
 
+@media screen and (max-width: 866px) {
+  .button-area__button-label {
+    font-size: 9px;
+  }
+}

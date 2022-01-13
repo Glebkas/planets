@@ -3,11 +3,9 @@ import React from "react";
 
 function SinglePlanet({ planet, open }) {
   const [info, setInfo] = React.useState("overview");
-  // const [color,setColor] = React.useState(planet.name);
 
   const handleChange = (e) => {
     console.log(e.target.id);
-    // setColor(planet.name)
     setInfo(e.target.value);
   };
 
@@ -30,18 +28,25 @@ function SinglePlanet({ planet, open }) {
           />
         </div>
         <div className="planet-info">
-          <h2 className="planet-info__title">{planet.name}</h2>
-          <p className="plant-info__description">{planet[info].content}</p>
-          <p className="planet-info__source">
-            Source :
-            <a
-              href={planet.overview.source}
-              className="planet-info__source-link"
+          <div className="planet-info__top">
+            <h2 className="planet-info__title fade-in">{planet.name}</h2>
+
+            <p
+              className={`plant-info__description plant-info__description-${info}`}
             >
-              Wikipedia
-            </a>
-            <span className="planet-info__sourse-icon"></span>
-          </p>
+              {planet[info].content}
+            </p>
+            <p className="planet-info__source">
+              Source :
+              <a
+                href={planet.overview.source}
+                className="planet-info__source-link"
+              >
+                Wikipedia
+              </a>
+              <span className="planet-info__sourse-icon"></span>
+            </p>
+          </div>
           <div className="button-area">
             <div className="button-area__button">
               <input

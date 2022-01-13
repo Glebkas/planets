@@ -2,8 +2,15 @@
   display: flex;
   justify-content: space-between;
   padding: 22px 0 23px 32px;
-  border-bottom: 1px solid rgba(255,255,255,0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   line-height: 40px;
   text-transform: uppercase;
   letter-spacing: -1.05px;
+}
+
+@media screen and (max-width: 866px) {
+  .header {
+    flex-direction:column ;
+
+  }
 }

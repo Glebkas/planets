@@ -3,3 +3,10 @@
   flex-direction: column;
   max-width: 350px;
 }
+
+@media screen and (max-width: 866px) {
+  .button-area {
+    max-width: 281px;
+    width: 100%;
+  }
+}

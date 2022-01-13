@@ -6,4 +6,33 @@
   text-transform: uppercase;
   margin: 0;
   font-weight: 400;
+  opacity: 1;
+  transition: opacity 0.6s ease-in;
+}
+
+.planet-info__title-earth {
+  opacity: 0;
+}
+
+@media screen and (max-width: 866px) {
+  .planet-info__title {
+    font-size: 48px;
+  }
+}
+
+.fade-in- {
+  opacity: 1;
+  animation-name: fadeInOpacity;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in;
+  animation-duration: 1s;
+}
+
+@keyframes fadeInOpacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

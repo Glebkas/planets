@@ -2,3 +2,11 @@
   display: flex;
   margin-bottom: 71px;
 }
+
+
+@media screen and (max-width: 866px) {
+  .single-planet__top {
+    flex-direction: column;
+
+  }
+}

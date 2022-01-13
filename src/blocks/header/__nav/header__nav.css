@@ -13,3 +13,11 @@
   margin: 0;
   align-items: center;
 }
+
+
+@media screen and (max-width: 866px) {
+  .header__nav {
+    justify-content: center;
+
+  }
+}
