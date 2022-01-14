@@ -11,7 +11,9 @@
 @import url(../src/blocks/planet-ilustration/planet-ilustration.css);
 @import url(../src/blocks/planet-info/__title/planet-info__title.css);
 @import url(../src/blocks/planet-info/__description/plant-info__description.css);
+@import url(../src/blocks/planet-ilustration/__tooltip/planet-ilustration__tooltip.css);
 @import url(../src/blocks/planet-ilustration/__img/planet-ilustration__img.css);
+@import url(../src/blocks/planet-ilustration/__img-tooltip/planet-ilustration__img-tooltip.css);
 @import url(../src/blocks/button-area/button-area.css);
 @import url(../src/blocks/button-area/__button/button-area__button.css);
 @import url(../src/blocks/button-area/__button-input/button-area__button-input.css);

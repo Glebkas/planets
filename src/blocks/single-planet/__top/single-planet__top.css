@@ -1,12 +1,11 @@
 .single-planet__top {
   display: flex;
-  margin-bottom: 71px;
+  margin: 96px 0 73px 0;
 }
-
 
 @media screen and (max-width: 866px) {
   .single-planet__top {
     flex-direction: column;
-
+    margin: 20px 0 73px 0;
   }
 }

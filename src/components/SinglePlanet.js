@@ -1,11 +1,10 @@
 import React from "react";
-// import data from "../utils/data";
+import PlanetImage from "./PlanetImage";
 
 function SinglePlanet({ planet, open }) {
   const [info, setInfo] = React.useState("overview");
 
   const handleChange = (e) => {
-    console.log(e.target.id);
     setInfo(e.target.value);
   };
 
@@ -15,17 +14,7 @@ function SinglePlanet({ planet, open }) {
     <section className="single-planet">
       <div className="single-planet__top">
         <div className="planet-ilustration">
-          <div className="planet-ilustration__img" />
-          <div
-            // className="planet-ilustration__img planet-ilustration__img_type_iner"
-            src=""
-            alt=""
-          />
-          <div
-            // className="planet-ilustration__img planet-ilustration__img_type_surface"
-            src=""
-            alt=""
-          />
+          <PlanetImage info={info} planet={planet} />
         </div>
         <div className="planet-info">
           <div className="planet-info__top">

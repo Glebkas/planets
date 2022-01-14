@@ -1,8 +1,10 @@
 .planet-ilustration {
   display: flex;
   margin: auto;
-  min-height: 754px;
+  max-width: 990px;
   align-items: center;
+  justify-content: center;
+  position: relative;
 }
 
 @media screen and (max-width: 866px) {

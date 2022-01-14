@@ -1,32 +1,46 @@
-// import React from "react";
+import React from "react";
 
-// function PlanetImage(props{}) {
-//     if (detail == 'overview') {
-//         console.log(planet)        
-//         return <img className="planet__spec" src={planet.images.planet} alt="planet overview"/>;   
-          
-//     }
-//     else if (props.detail == 'structure'){
-//         return <img className="planet__spec" src={planet.images.internal} alt="planet structure"/>;
-//     }
-//     else {
+function PlanetImage({ info, planet }) {
+  if (info === "overview") {
+    return (
+      <img
+        className="planet-ilustration__img"
+        src={planet.images.planet}
+        alt={`${planet.name} overview img`}
+      />
+    );
+  } else if (info === "structure") {
+    return (
+      <img
+        className="planet-ilustration__img"
+        src={planet.images.internal}
+        alt={`${planet.name} internal structure img`}
+      />
+    );
+  } else {
+    return (
+      <>
+        <img
+          className="planet-ilustration__img"
+          src={planet.images.planet}
+          alt={`${planet.name} internal structure img`}
+        />
+        <img
+          className="planet-ilustration__img-tooltip"
+          src={planet.images.geology}
+          alt={`${planet.name} internal structure img`}
+        />
+      </>
+    );
+  }
+}
 
-//   return (
-//     <div className="planet-ilustration">
-//       <div className="planet-ilustration__img" />
-//       <div
-//         // className="planet-ilustration__img planet-ilustration__img_type_iner"
-//         src=""
-//         alt=""
-//       />
-//       <div
-//         // className="planet-ilustration__img planet-ilustration__img_type_surface"
-//         src=""
-//         alt=""
-//       />
-//     </div>
-//   );
-// }
+export default PlanetImage;
 
-// }
-// export default PlanetImage;
+{
+  /* <img
+  className="planet__spec"
+  src={planet.images.planet}
+  alt="planet overview"
+/>; */
+}

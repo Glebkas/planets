@@ -1,0 +1,14 @@
+.planet-ilustration__img-tooltip {
+  position: absolute;
+  max-width: 163px;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media screen and (max-width: 866px) {
+  .planet-ilustration__img-tooltip {
+    max-width: 102.69px;
+    top: 70%;
+  }
+}

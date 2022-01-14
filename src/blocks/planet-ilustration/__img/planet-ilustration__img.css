@@ -1,6 +1,10 @@
 .planet-ilustration__img {
-  background: url("../../../assets/planet-mercury.svg");
-  background-repeat: no-repeat;
-  height: 290px;
-  width: 290px;
+  width: 100%;
+  justify-content: center;
+}
+
+@media screen and (max-width: 866px) {
+  .planet-ilustration__img {
+    max-width: 60%;
+  }
 }
