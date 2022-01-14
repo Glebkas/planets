@@ -36,11 +36,3 @@ function PlanetImage({ info, planet }) {
 }
 
 export default PlanetImage;
-
-{
-  /* <img
-  className="planet__spec"
-  src={planet.images.planet}
-  alt="planet overview"
-/>; */
-}

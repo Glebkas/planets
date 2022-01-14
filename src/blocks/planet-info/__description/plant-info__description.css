@@ -12,11 +12,8 @@
     font-size: 11px;
   }
 }
-.plant-info__description-overview {
-}
-
-.plant-info__description-structure {
-}
-
-.plant-info__description-geology {
+@media screen and (max-width: 700px) {
+  .plant-info__description {
+    text-align: center;
+  }
 }

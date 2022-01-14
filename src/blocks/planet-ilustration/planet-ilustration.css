@@ -12,3 +12,9 @@
     min-height: 460px;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .planet-ilustration {
+    min-height: 304px;
+  }
+}

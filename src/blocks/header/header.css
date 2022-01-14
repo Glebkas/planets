@@ -10,7 +10,13 @@
 
 @media screen and (max-width: 866px) {
   .header {
-    flex-direction:column ;
+    flex-direction: column;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    padding: 16px 24px 16px 24px;
   }
 }

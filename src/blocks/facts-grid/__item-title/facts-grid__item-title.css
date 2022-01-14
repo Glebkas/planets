@@ -6,3 +6,11 @@
   letter-spacing: 0.727273px;
   margin: 0;
 }
+
+@media screen and (max-width: 700px) {
+  .facts-grid__item-title {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+  }
+}

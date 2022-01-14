@@ -10,7 +10,10 @@
   margin: 0 auto auto;
 }
 
-@media screen and (max-width: 866px) {
+@media screen and (max-width: 700px) {
   .facts-grid {
+    grid-template-columns: unset;
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: unset;
   }
 }

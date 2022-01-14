@@ -14,10 +14,14 @@
   align-items: center;
 }
 
-
 @media screen and (max-width: 866px) {
   .header__nav {
     justify-content: center;
+  }
+}
 
+@media screen and (max-width: 700px) {
+  .header__nav {
+    display: none;
   }
 }
