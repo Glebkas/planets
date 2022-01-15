@@ -2,6 +2,7 @@
 @import url(../src/fonts/fonts.css);
 @import url(../src/blocks/root/root.css);
 @import url(../src/blocks/header/header.css);
+@import url(../src/blocks/header/__menu-hamburger/header__menu-hamburger.css);
 @import url(../src/blocks/header/__title/header__title.css);
 @import url(../src/blocks/header/__nav/header__nav.css);
 @import url(../src/blocks/header/__nav-item/header__nav-item.css);
@@ -11,7 +12,6 @@
 @import url(../src/blocks/planet-ilustration/planet-ilustration.css);
 @import url(../src/blocks/planet-info/__title/planet-info__title.css);
 @import url(../src/blocks/planet-info/__description/plant-info__description.css);
-
 @import url(../src/blocks/planet-info/__source/planet-info__source.css);
 @import url(../src/blocks/planet-info/__source-link/planet-info__source-link.css);
 @import url(../src/blocks/planet-ilustration/__tooltip/planet-ilustration__tooltip.css);

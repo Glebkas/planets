@@ -1,13 +1,13 @@
 import React from "react";
 import PlanetImage from "./PlanetImage";
 import Buttons from "./Buttons";
+import FactGrid from "./FactsGrid";
 
 function SinglePlanet({ planet, open }) {
   const [info, setInfo] = React.useState("overview");
 
   const handleChange = (e) => {
     setInfo(e.target.value);
-    console.log(window.innerWidth);
   };
 
   // const[buttonName, setButtonName] = React.useState()
@@ -53,24 +53,7 @@ function SinglePlanet({ planet, open }) {
       </div>
 
       <div className="single-planet__bottom">
-        <ul className="facts-grid">
-          <li className="facts-grid__item">
-            <p className="facts-grid__item-title">ROTATION TIME</p>
-            <p className="facts-grid__item-fact">{planet.rotation}</p>
-          </li>
-          <li className="facts-grid__item">
-            <p className="facts-grid__item-title">REVOLUTION TIME</p>
-            <p className="facts-grid__item-fact">{planet.revolution}</p>
-          </li>
-          <li className="facts-grid__item">
-            <p className="facts-grid__item-title">RADIUS</p>
-            <p className="facts-grid__item-fact">{planet.radius}</p>
-          </li>
-          <li className="facts-grid__item">
-            <p className="facts-grid__item-title">AVERAGE TEMP.</p>
-            <p className="facts-grid__item-fact">{planet.temperature}</p>
-          </li>
-        </ul>
+        <FactGrid planet={planet} />
       </div>
     </section>
   );

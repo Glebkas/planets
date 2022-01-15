@@ -6,7 +6,6 @@ function Header({ setPlanet }) {
 
   function handleNavClick(planet) {
     setPlanet(planet);
-    console.log(planet);
     if (open) {
       setOpen(false);
     }
@@ -15,6 +14,7 @@ function Header({ setPlanet }) {
   return (
     <header className="header">
       <h1 className="header__title">THE PLANETS</h1>
+      <button className="header__menu-hamburger"></button>
       <ul className={open ? "header__nav_active" : "header__nav"}>
         {data.map((item) => (
           <li
@@ -31,4 +31,3 @@ function Header({ setPlanet }) {
 }
 
 export default Header;
-

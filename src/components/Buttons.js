@@ -1,5 +1,3 @@
-import React from "react";
-
 function Buttons(props) {
   return (
     <div className="button-area">

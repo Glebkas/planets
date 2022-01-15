@@ -9,14 +9,12 @@ function App() {
   const [planet, setPlanet] = React.useState(mercury);
 
   return (
-    <>
-      <div className="App">
-        <div className="root">
-          <Header setPlanet={setPlanet} />
-          <SinglePlanet planet={planet} />
-        </div>
+    <div className="App">
+      <div className="root">
+        <Header setPlanet={setPlanet} />
+        <SinglePlanet planet={planet} />
       </div>
-    </>
+    </div>
   );
 }
 

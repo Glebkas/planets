@@ -1,4 +1,16 @@
 .planet-info__source {
   margin: 0;
   padding: 0;
+  font-family: spartan;
+  font-weight: 400;
+  line-height: 24px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0 0 39px 0;
+}
+
+@media screen and (max-width: 866px) {
+  .planet-info__source {
+    margin: 0;
+  }
 }
