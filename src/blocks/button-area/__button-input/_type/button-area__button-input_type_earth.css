@@ -1,3 +1,10 @@
 .button-area__button-input_type_earth:checked + .button-area__button-label {
   background-color: rgba(109, 46, 213, 1);
 }
+
+@media screen and (max-width: 700px) {
+  .button-area__button-input_type_earth:checked + .button-area__button-label {
+    background-color: unset;
+    border-bottom: 4px solid rgba(109, 46, 213, 1);
+  }
+}

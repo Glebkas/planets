@@ -34,8 +34,6 @@
   .button-area__button-label {
     font-size: 9px;
     border: none;
-  }
-  .button-area__button-label::after {
-    content: attr();
+    margin-bottom: unset;
   }
 }

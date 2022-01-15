@@ -1,12 +1,20 @@
 import React from "react";
 import PlanetImage from "./PlanetImage";
+import Buttons from "./Buttons";
 
 function SinglePlanet({ planet, open }) {
   const [info, setInfo] = React.useState("overview");
 
   const handleChange = (e) => {
     setInfo(e.target.value);
+    console.log(window.innerWidth);
   };
+
+  // const[buttonName, setButtonName] = React.useState()
+
+  // const handleScreenSize =()=>{
+  //   setButtonName
+  // }
 
   const planetName = planet.name.toLowerCase();
 
@@ -36,58 +44,14 @@ function SinglePlanet({ planet, open }) {
               <span className="planet-info__sourse-icon"></span>
             </p>
           </div>
-          <div className="button-area">
-            <div className="button-area__button">
-              <input
-                className={`button-area__button-input button-area__button-input_type_${planetName}`}
-                type="radio"
-                id="overview"
-                name="info"
-                value="overview"
-                onChange={handleChange}
-                checked={info === "overview"}
-              />
-              <label className="button-area__button-label" htmlFor="overview">
-                {" "}
-                <span className="button-area__button-label-num">01</span>{" "}
-                Overview
-              </label>
-            </div>
-            <div className="button-area__button">
-              <input
-                className={`button-area__button-input button-area__button-input_type_${planetName}`}
-                type="radio"
-                id="structure"
-                name="info"
-                value="structure"
-                onChange={handleChange}
-                checked={info === "structure"}
-              />
-              <label className="button-area__button-label" htmlFor="structure">
-                {" "}
-                <span className="button-area__button-label-num">02</span>{" "}
-                Internal Structure
-              </label>
-            </div>
-            <div className="button-area__button">
-              <input
-                className={`button-area__button-input button-area__button-input_type_${planetName}`}
-                type="radio"
-                id="geology"
-                name="info"
-                value="geology"
-                onChange={handleChange}
-                checked={info === "geology"}
-              />
-              <label className="button-area__button-label" htmlFor="geology">
-                {" "}
-                <span className="button-area__button-label-num">03</span>{" "}
-                Surface Geology
-              </label>
-            </div>
-          </div>
+          <Buttons
+            planetName={planetName}
+            handleChange={handleChange}
+            info={info}
+          ></Buttons>
         </div>
       </div>
+
       <div className="single-planet__bottom">
         <ul className="facts-grid">
           <li className="facts-grid__item">

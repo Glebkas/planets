@@ -1,3 +1,10 @@
 .button-area__button-input_type_uranus:checked + .button-area__button-label {
   background-color: rgba(30, 193, 162, 1);
 }
+
+@media screen and (max-width: 700px) {
+  .button-area__button-input_type_uranus:checked + .button-area__button-label {
+    background-color: unset;
+    border-bottom: 4px solid rgba(30, 193, 162, 1);
+  }
+}

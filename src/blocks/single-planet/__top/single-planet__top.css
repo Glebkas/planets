@@ -9,3 +9,17 @@
     margin: 20px 0 73px 0;
   }
 }
+
+@media screen and (max-width: 700px) {
+  .single-planet__top {
+    flex-direction: column;
+    margin: 60px 0 28px 0;
+  }
+}
+
+@media screen and (max-width: 418px) {
+  .single-planet__top {
+    flex-direction: column;
+    margin: 40px 0 28px 0;
+  }
+}

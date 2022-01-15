@@ -1,0 +1,9 @@
+.button-area__button-label_type_structure::after {
+  content: "internal \00a0 Structure";
+}
+
+@media screen and (max-width: 700px) {
+  .button-area__button-label_type_structure::after {
+    content: "Structure";
+  }
+}

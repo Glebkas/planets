@@ -1,3 +1,10 @@
 .button-area__button-input_type_mercury:checked + .button-area__button-label {
   background-color: rgba(65, 158, 187, 1);
 }
+
+@media screen and (max-width: 700px) {
+  .button-area__button-input_type_mercury:checked + .button-area__button-label {
+    background-color: unset;
+    border-bottom: 4px solid rgba(65, 158, 187, 1);
+  }
+}
