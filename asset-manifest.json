@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/planets/static/css/main.f98739a2.css",
+    "main.js": "/planets/static/js/main.ac0aeb7a.js",
+    "static/js/787.f2a7509c.chunk.js": "/planets/static/js/787.f2a7509c.chunk.js",
+    "static/media/Spartan-Bold.ttf": "/planets/static/media/Spartan-Bold.d6c5fa93ed88217dd681.ttf",
+    "static/media/Spartan-Regular.ttf": "/planets/static/media/Spartan-Regular.79b370d147e62d01fb86.ttf",
+    "static/media/Antonio-Medium.ttf": "/planets/static/media/Antonio-Medium.35a8281a68e5eba30f86.ttf",
+    "static/media/Spartan-Regular.woff": "/planets/static/media/Spartan-Regular.fdf38045ec1804318c45.woff",
+    "static/media/Spartan-Bold.woff": "/planets/static/media/Spartan-Bold.2ba0590c4577ee16f42e.woff",
+    "static/media/Antonio-Medium.woff": "/planets/static/media/Antonio-Medium.238445338538677575fe.woff",
+    "static/media/background-stars.svg": "/planets/static/media/background-stars.f6233a6a8d2351c57f2b.svg",
+    "static/media/icon-close.svg": "/planets/static/media/icon-close.ccdbfb75cb65f2ddfadd.svg",
+    "index.html": "/planets/index.html",
+    "static/media/icon-hamburger.svg": "/planets/static/media/icon-hamburger.05a40a49142005f6faf2.svg",
+    "main.f98739a2.css.map": "/planets/static/css/main.f98739a2.css.map",
+    "main.ac0aeb7a.js.map": "/planets/static/js/main.ac0aeb7a.js.map",
+    "787.f2a7509c.chunk.js.map": "/planets/static/js/787.f2a7509c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f98739a2.css",
+    "static/js/main.ac0aeb7a.js"
+  ]
+}
