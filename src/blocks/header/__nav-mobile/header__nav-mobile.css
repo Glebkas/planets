@@ -1,0 +1,15 @@
+.header__nav-mobile {
+  position: absolute;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(7, 7, 36, 1);
+  left: 0;
+  top: 70px;
+  display: flex;
+  overflow: hidden;
+  margin: 0;
+  flex-direction: column;
+  padding: 44px 0 0 0;
+  list-style: none;
+}

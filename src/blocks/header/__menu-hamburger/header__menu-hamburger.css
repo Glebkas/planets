@@ -5,7 +5,7 @@
   border: 0;
   padding: 0;
   background-color: transparent;
-  background: url(../../../../public/assets/icon-hamburger.svg);
+  background: url(../../../../src/assets/icon-hamburger.svg);
 }
 
 @media screen and (max-width: 700px) {

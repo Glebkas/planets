@@ -3,45 +3,38 @@ import PlanetImage from "./PlanetImage";
 import Buttons from "./Buttons";
 import FactGrid from "./FactsGrid";
 
-function SinglePlanet({ planet, open }) {
+function SinglePlanet(props) {
   const [info, setInfo] = React.useState("overview");
 
   const handleChange = (e) => {
     setInfo(e.target.value);
   };
 
-  // const[buttonName, setButtonName] = React.useState()
-
-  // const handleScreenSize =()=>{
-  //   setButtonName
-  // }
-
-  const planetName = planet.name.toLowerCase();
+  const planetName = props.planet.name.toLowerCase();
 
   return (
-    <section className="single-planet">
+    <section className={props.open ? "single-planet_hide" : "single-planet"}>
       <div className="single-planet__top">
         <div className="planet-ilustration">
-          <PlanetImage info={info} planet={planet} />
+          <PlanetImage info={info} planet={props.planet} />
         </div>
         <div className="planet-info">
           <div className="planet-info__top">
-            <h2 className="planet-info__title fade-in">{planet.name}</h2>
+            <h2 className="planet-info__title fade-in">{props.planet.name}</h2>
 
             <p
               className={`plant-info__description plant-info__description-${info}`}
             >
-              {planet[info].content}
+              {props.planet[info].content}
             </p>
             <p className="planet-info__source">
               Source :
               <a
-                href={planet.overview.source}
+                href={props.planet.overview.source}
                 className="planet-info__source-link"
               >
                 Wikipedia
               </a>
-              <span className="planet-info__sourse-icon"></span>
             </p>
           </div>
           <Buttons
@@ -53,7 +46,7 @@ function SinglePlanet({ planet, open }) {
       </div>
 
       <div className="single-planet__bottom">
-        <FactGrid planet={planet} />
+        <FactGrid planet={props.planet} />
       </div>
     </section>
   );

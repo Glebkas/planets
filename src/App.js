@@ -8,11 +8,29 @@ function App() {
   const mercury = data[0];
   const [planet, setPlanet] = React.useState(mercury);
 
+  const [open, setOpen] = React.useState(false);
+
+  function handleNavClick(planet) {
+    setPlanet(planet);
+    if (open) {
+      setOpen(false);
+    }
+  }
+
+  function handleHumburgerClick() {
+    setOpen(!open);
+  }
+
   return (
     <div className="App">
       <div className="root">
-        <Header setPlanet={setPlanet} />
-        <SinglePlanet planet={planet} />
+        <Header
+          setPlanet={setPlanet}
+          open={open}
+          handleHumburgerClick={handleHumburgerClick}
+          handleNavClick={handleNavClick}
+        />
+        <SinglePlanet planet={planet} open={open} />
       </div>
     </div>
   );
