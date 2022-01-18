@@ -21,7 +21,6 @@ function SinglePlanet(props) {
         <div className="planet-info">
           <div className="planet-info__top">
             <h2 className="planet-info__title fade-in">{props.planet.name}</h2>
-
             <p
               className={`plant-info__description plant-info__description-${info}`}
             >

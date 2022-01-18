@@ -1,7 +1,5 @@
 import React from "react";
 
-function PlanetImage({ info, planet }) {
-  if (info === "overview") {
     return (
       <img
         className="planet-ilustration__img"

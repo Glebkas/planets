@@ -7,7 +7,6 @@ import data from "./utils/data";
 function App() {
   const mercury = data[0];
   const [planet, setPlanet] = React.useState(mercury);
-
   const [open, setOpen] = React.useState(false);
 
   function handleNavClick(planet) {

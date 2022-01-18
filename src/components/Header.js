@@ -1,16 +1,23 @@
 import React from "react";
 import data from "../utils/data";
 
+
+
 function Header(props) {
+
   return (
     <header className="header">
       <h1 className="header__title">THE PLANETS</h1>
+   
       <button
         onClick={props.handleHumburgerClick}
         className={
-          props.open ? "header__menu-hamburger header__menu-hamburger_close" : "header__menu-hamburger"
+          props.open
+            ? "header__menu-hamburger header__menu-hamburger_close"
+            : "header__menu-hamburger"
         }
       ></button>
+
       <ul className={props.open ? "header__nav-mobile" : "header__nav"}>
         {data.map((item) => (
           <li
@@ -31,3 +38,5 @@ function Header(props) {
 }
 
 export default Header;
+
+
