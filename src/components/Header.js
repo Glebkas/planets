@@ -1,14 +1,12 @@
 import React from "react";
 import data from "../utils/data";
-
-
+import Nav from "./Nav";
 
 function Header(props) {
-
   return (
     <header className="header">
       <h1 className="header__title">THE PLANETS</h1>
-   
+
       <button
         onClick={props.handleHumburgerClick}
         className={
@@ -18,25 +16,13 @@ function Header(props) {
         }
       ></button>
 
-      <ul className={props.open ? "header__nav-mobile" : "header__nav"}>
-        {data.map((item) => (
-          <li
-            className={
-              props.open
-                ? `header__nav-item-mobile header__nav-item-mobile_type_${item.name.toLowerCase()}`
-                : "header__nav-item"
-            }
-            onClick={() => props.handleNavClick(item)}
-            key={item.name}
-          >
-            {item.name}
-          </li>
-        ))}
-      </ul>
+      <Nav
+        data={data}
+        handleNavClick={props.handleNavClick}
+        open={props.open}
+      />
     </header>
   );
 }
 
 export default Header;
-
-
