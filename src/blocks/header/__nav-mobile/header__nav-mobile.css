@@ -12,5 +12,15 @@
   flex-direction: column;
   padding: 44px 0 0 0;
   list-style: none;
+  opacity: 1;
+  animation: fadein 1s ease-in-out;
+}
 
+@keyframes fadein {
+  from {
+    opacity: 0.3;
+  }
+  to {
+    opacity: 1;
+  }
 }
