@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/planets/static/css/main.319d2c30.css",
-    "main.js": "/planets/static/js/main.460e6ec3.js",
+    "main.js": "/planets/static/js/main.c7dfafc7.js",
     "static/js/787.57e52064.chunk.js": "/planets/static/js/787.57e52064.chunk.js",
     "static/media/Spartan-Bold.ttf": "/planets/static/media/Spartan-Bold.d6c5fa93ed88217dd681.ttf",
     "static/media/Spartan-Regular.ttf": "/planets/static/media/Spartan-Regular.79b370d147e62d01fb86.ttf",
@@ -14,11 +14,11 @@
     "index.html": "/planets/index.html",
     "static/media/icon-hamburger.svg": "/planets/static/media/icon-hamburger.05a40a49142005f6faf2.svg",
     "main.319d2c30.css.map": "/planets/static/css/main.319d2c30.css.map",
-    "main.460e6ec3.js.map": "/planets/static/js/main.460e6ec3.js.map",
+    "main.c7dfafc7.js.map": "/planets/static/js/main.c7dfafc7.js.map",
     "787.57e52064.chunk.js.map": "/planets/static/js/787.57e52064.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.319d2c30.css",
-    "static/js/main.460e6ec3.js"
+    "static/js/main.c7dfafc7.js"
   ]
 }
