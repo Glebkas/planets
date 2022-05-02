@@ -29,14 +29,8 @@ function App() {
                     open={open}
                     handleHumburgerClick={handleHumburgerClick}
                     handleNavClick={handleNavClick}
-                ></Header>
-                <Helmet>
-                    <meta
-                        property='og:image'
-                        content='https://repository-images.githubusercontent.com/444030332/fcfa2b23-4d3c-4ff1-ab31-a3cf3619785d'
-                    />
-                </Helmet>
-                <Header />
+                />
+
                 <SinglePlanet planet={planet} open={open} />
             </div>
         </div>
